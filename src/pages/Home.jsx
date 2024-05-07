@@ -81,7 +81,7 @@ export default function Home() {
           </div>
         </div>
       </form>
-      <div className="flex gap-4">
+      <div className="flex flex-col gap-4 md:flex-row md:flex-wrap md:gap-4 mt-10">
         <h2 className='font-sans text-2xl font-bold'>Notes:-</h2>
         {notes.map((note) => (
           <Note note={note} onDelete={deleteNote} key={note.id} />
